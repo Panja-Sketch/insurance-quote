@@ -1,0 +1,45 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Django specific
+db.sqlite3  # Ignore SQLite DB, but not PostgreSQL
+*.log
+local_settings.py  # Local configs that shouldn't be shared
+
+# Python environment
+.env           # Environment variables file
+venv/          # Virtual environment folder
+env/
+
+# Migrations
+*/migrations/*
+!*/migrations/__init__.py  # Keep the init file to ensure proper structure
+
+# Node.js dependencies
+node_modules/
+
+# TypeScript build artifacts
+dist/          # Build output
+*.tsbuildinfo  # TypeScript incremental build files
+
+# TailwindCSS specific
+.purgecss/     # Purged CSS files (optional)
+*.css.map      # CSS source maps
+
+# Logs and cache
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.DS_Store      # macOS specific
+
+# Coverage reports
+coverage/
+*.coverage
+.coverage.*
+
+# Temporary files
+*.swp          # Swap files from text editors like Vim
+.idea/         # IDE project settings (like JetBrains IDEs)
+.vscode/       # VSCode settings
